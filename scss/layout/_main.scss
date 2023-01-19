@@ -3,8 +3,12 @@
 }
 
 .main__section-one {
-  width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
+  padding: 118px 0;
+  @include for-desktop-up {
+    padding: 200px 0;
+  }
   color: var(--color-white);
   background-color: var(--color-secondary-gray);
   background-image: linear-gradient(
@@ -16,21 +20,32 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 200px 0;
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url("../images/backround-img-2x.jpg");
+  }
 }
 
 .main__h-one {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   margin: 0 auto 30px;
   max-width: 696px;
+  @include for-desktop-up {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .main__ul {
   @extend %display-flex;
   flex-wrap: wrap;
-  flex-basis: calc(100% / 3);
+  flex-basis: calc((100% - 60px) / 3);
 }

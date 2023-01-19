@@ -3,7 +3,9 @@
   flex-basis: 370px;
   position: relative;
   &__link {
-    display: block;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -28,6 +30,7 @@
     height: 100%;
     padding: 63px 24px;
     background: rgba(33, 150, 243, 0.9);
+    flex-grow: 1;
     transform: translateY(101%);
     transition: transform;
     transition-duration: 250ms;

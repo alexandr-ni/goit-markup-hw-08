@@ -1,14 +1,26 @@
 .clients__title {
   @extend %title;
+  @include for-desktop-up {
+    font-size: 36px;
+    line-height: 1.16;
+    margin: 0 0 50px;
+  }
 }
 
 .clients__ul {
   @extend %display-flex;
+  @include for-phone-only {
+    flex-wrap: wrap;
+  }
 }
 
 .client__card {
-  width: 170px;
+  max-width: 210px;
   height: 92px;
+  @include for-phone-only {width: 44%;}
+  @include for-desktop-up {
+    width: 170px;
+  }
 }
 
 .client__icon {

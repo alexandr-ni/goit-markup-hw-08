@@ -1,33 +1,39 @@
-.what-we-do__title {
-  @extend %title;
-}
+.what-we-do {
+    @include for-phone-only {
+        display: none
+    }
 
-.what-we-do__menu {
-  @extend %display-flex;
-}
-
-.what-we-do__list {
-  position: relative;
-}
-
-.what-we-do__box {
-  background: rgba(47, 48, 58, 0.8);
-  position: absolute;
-  max-width: 370px;
-  width: 100%;
-  bottom: 0;
-}
-
-.what-we-do__sentence {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--color-white);
-  margin: 0;
-  padding: 27px 0;
+        &__title {
+            @extend %title;
+        }
+    
+        &__menu {
+            @extend %display-flex;
+        }
+    
+        &__list {
+            position: relative;
+        }
+    
+        &__box {
+            background: rgba(47, 48, 58, 0.8);
+            position: absolute;
+            max-width: 370px;
+            width: 100%;
+            bottom: 0;
+        }
+    
+        &__sentence {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--color-white);
+            margin: 0;
+            padding: 27px 0;
+        }
 }
