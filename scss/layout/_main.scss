@@ -1,0 +1,36 @@
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.main__section-one {
+  width: 1600px;
+  margin: 0 auto;
+  color: var(--color-white);
+  background-color: var(--color-secondary-gray);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/backround-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 200px 0;
+}
+
+.main__h-one {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  margin: 0 auto 30px;
+  max-width: 696px;
+}
+
+.main__ul {
+  @extend %display-flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 3);
+}

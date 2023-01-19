@@ -1,0 +1,26 @@
+body {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+textarea {
+  resize: none;
+}
+
+.words-in-center {
+  text-align: center;
+}
+
+.paragraph {
+  color: var(--color-gray);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin: 0;
+}

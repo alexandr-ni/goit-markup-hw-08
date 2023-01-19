@@ -1,0 +1,32 @@
+.features__section {
+  padding: 94px 0 0;
+  background-size: 100%;
+}
+
+.feature__ul {
+  display: flex;
+  gap: 30px;
+}
+
+.feature__list {
+  max-width: 270px;
+}
+
+.feature__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background: var(--color-lightgray);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.feature__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin: 0 0 10px;
+}

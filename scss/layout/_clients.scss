@@ -1,0 +1,31 @@
+.clients__title {
+  @extend %title;
+}
+
+.clients__ul {
+  @extend %display-flex;
+}
+
+.client__card {
+  width: 170px;
+  height: 92px;
+}
+
+.client__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 5px;
+  fill: var(--color-social-icon);
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--color-blue);
+    fill: var(--color-blue);
+  }
+}
