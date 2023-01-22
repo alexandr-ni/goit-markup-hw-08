@@ -2,6 +2,12 @@
     @include for-phone-only {
         display: none
     }
+    @include for-tablet-portrait-up{
+        display: none
+    }
+    @include for-desktop-up {
+        display: block;
+    }
 
         &__title {
             @extend %title;

@@ -12,14 +12,24 @@
   @include for-phone-only {
     flex-wrap: wrap;
   }
+  @include for-tablet-landscape-up {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @include for-desktop-up {
+    flex-wrap: nowrap;
+  }
 }
 
 .client__card {
   max-width: 210px;
   height: 92px;
   @include for-phone-only {width: 44%;}
+  @include for-tablet-landscape-up {
+    min-width: 226px;
+  }
   @include for-desktop-up {
-    width: 170px;
+    min-width: 170px;
   }
 }
 

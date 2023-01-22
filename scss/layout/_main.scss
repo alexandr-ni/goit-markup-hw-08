@@ -38,7 +38,11 @@
   letter-spacing: 0.06em;
   margin: 0 auto 30px;
   max-width: 696px;
+  @include for-tablet-landscape-up {
+    max-width: 360px;
+  }
   @include for-desktop-up {
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }

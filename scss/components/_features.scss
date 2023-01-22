@@ -8,17 +8,20 @@
   &__ul {
       display: flex;
       gap: 30px;
-
-      @include for-phone-only {
-          flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+      @include for-desktop-up {
+        flex-wrap: nowrap;
       }
   }
 
   &__list {
       max-width: 450px;
-
+      @include for-tablet-landscape-up {
+        max-width: 354px;
+      }
       @include for-desktop-up {
-          max-width: 270px;
+        max-width: 270px;
       }
   }
 

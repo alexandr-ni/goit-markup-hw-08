@@ -15,8 +15,15 @@
   &__ul {
     @extend %display-flex;
     @include for-phone-only {
-            flex-wrap: wrap;
+        flex-wrap: wrap;
         }
+    @include for-tablet-landscape-up {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @include for-desktop-up {
+        flex-wrap: nowrap;
+    }
   }
 
   &__card {
@@ -26,6 +33,10 @@
     border-radius: 0px 0px 4px 4px;
     max-width: 450px;
     max-height: 622px;
+    @include for-tablet-landscape-up {
+        max-width: 354px;
+        max-height: 536px;
+    }
     @include for-desktop-up {
         max-width: 270px;
         max-height: 428px;
