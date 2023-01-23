@@ -1,5 +1,4 @@
 .our-team {
-  max-width: 1600px;
   margin: 0 auto;
   background-color: var(--color-lightgray);
   
@@ -14,12 +13,19 @@
 
   &__ul {
     @extend %display-flex;
+    justify-content: center;
     @include for-phone-only {
         flex-wrap: wrap;
         }
     @include for-tablet-landscape-up {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    @include for-tablet-only {
+        margin: 0 24px 0;
+    }
+    @media (max-width: 815px) {
+        margin: 0;
     }
     @include for-desktop-up {
         flex-wrap: nowrap;
@@ -31,15 +37,15 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    max-width: 450px;
+    width: 450px;
     max-height: 622px;
     @include for-tablet-landscape-up {
-        max-width: 354px;
-        max-height: 536px;
+        width: 354px;
+        height: 536px;
     }
     @include for-desktop-up {
-        max-width: 270px;
-        max-height: 428px;
+        width: 270px;
+        height: 428px;
     }
   }
 

@@ -37,6 +37,9 @@
     @include for-phone-only {
         display: none;
     }
+    @include for-tablet-only{
+        flex-direction: column;
+    }
     @include for-desktop-up {
         flex-wrap: nowrap;
         gap: 50px;
@@ -130,6 +133,6 @@
     height: 40px;
     border: 0;
     background-color: var(--color-white);
-    @include for-tablet-portrait-up {display: none;}
+    @include for-tablet-landscape-up {display: none;}
   }
 }

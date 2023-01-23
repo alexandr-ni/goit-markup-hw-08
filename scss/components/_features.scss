@@ -10,6 +10,12 @@
       gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
+      @include for-tablet-only {
+        margin: 0 24px 0;
+      }
+      @media (max-width: 815px) {
+        margin: 0;
+      }
       @include for-desktop-up {
         flex-wrap: nowrap;
       }

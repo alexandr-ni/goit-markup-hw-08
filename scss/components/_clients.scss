@@ -9,12 +9,21 @@
 
 .clients__ul {
   @extend %display-flex;
+  justify-content: center;
   @include for-phone-only {
     flex-wrap: wrap;
   }
   @include for-tablet-landscape-up {
     flex-wrap: wrap;
-    justify-content: center;
+  }
+  @include for-tablet-only {
+    margin: 0 88px 0;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    margin: 0;
+  } 
+  @media (min-width: 720px) and (max-width: 767px) {
+    max-width: 689px;
   }
   @include for-desktop-up {
     flex-wrap: nowrap;
