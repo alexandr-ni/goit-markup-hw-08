@@ -30,6 +30,7 @@
 
   &__logo-socials {
     display: flex;
+    align-items: baseline;
     @include for-phone-only {
       flex-direction: column;
       gap: 60px;
@@ -38,7 +39,6 @@
         gap: 165px;
     }
     @include for-desktop-up {
-        align-items: baseline;
         gap: 93px;
     }
   }

@@ -7,6 +7,12 @@
     @include for-phone-only {
         justify-content: space-between;
     }
+    @media (min-width:480px) and (max-width: 768px) {
+        max-width: 480px;
+    }
+    @include for-tablet-only {
+        max-width: 768px;
+    }
   }
 
   &__nav {

@@ -30,6 +30,12 @@
   }
 }
 
+.main__container {
+    @include for-phone-only {
+        max-width: 480px;
+    }
+}
+
 .main__h-one {
   text-transform: uppercase;
   font-weight: 900;
